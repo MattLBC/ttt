@@ -14,7 +14,6 @@
   <body>
     <main>
       <div class="grid">
-
         <!-- Turn indicator -->
         <div class="turn">
           <i class="fa-solid fa-x turquoise"></i>
@@ -35,20 +34,29 @@
         </div>
 
         <!-- Play area -->
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
 
         <!-- Scoreboard -->
-        <div class="score"></div>
-        <div class="score"></div>
-        <div class="score"></div>
+        <div class="score shadow" style="background-color: var(--turquoise)">
+          <p>Player 1</p>
+          <span>0 Wins</span>
+        </div>
+        <div class="score shadow" style="background-color: var(--light-grey)">
+          <p>Ties</p>
+          <span>0</span>
+        </div>
+        <div class="score shadow" style="background-color: var(--yellow)">
+          <p>Player 2</p>
+          <span>0 Wins</span>
+        </div>
       </div>
     </main>
     <footer>
@@ -56,5 +64,14 @@
         Coded by Matt - <a href="https://github.com/MattLBC/ttt">Github Repo</a>
       </p>
     </footer>
+
+    <!-- Modal for game end -->
+    <div class="modal hidden">
+      <div class="modal-contents">
+        <p data-id="modal-text">Player 1 wins!</p>
+        <button data-id="modal-btn">Play again</button>
+      </div>
+    </div>
+
   </body>
 </html>
